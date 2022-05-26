@@ -50,7 +50,7 @@ console.log(aframe, extras);
       :position="`${viking[0]} 0 ${viking[1]}`"
       :rotation="`0 ${Math.random()*360} 0`"
       scale="0.5 0.5 0.5"
-      gltf-model="url(/untitled.glb)"
+      gltf-model="url(/metaverse-environment/untitled.glb)"
       animation-mixer
       shadow="receive: false"
     ></a-entity>
