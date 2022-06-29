@@ -25,6 +25,7 @@ console.log(aframe, extras);
 
 <template>
   <a-scene fog stats>
+    <a-entity gltf-model="url(/metaverse-environment/scene.glb)" shadow="receive: true; cast: false"/>
     <a-entity camera look-controls wasd-controls="fly: true" position="0 3 0"/>
     <a-box
       position="-1 0.5 -8"
@@ -41,7 +42,7 @@ console.log(aframe, extras);
     <!-- <a-entity light="type: directional; color: #EEE; intensity: 0.5; castShadow: true" position="-2 5 2"></a-entity> -->
     <a-entity
       light="type: point; color: #EEE; intensity: 0.5; castShadow: true"
-      position="-2 5 2"
+      position="-2 20 2"
     ></a-entity>
     <a-entity
       v-for="(viking, idx) in vikings"
@@ -54,14 +55,14 @@ console.log(aframe, extras);
       animation-mixer
       shadow="receive: false"
     ></a-entity>
-    <a-plane
+    <!-- <a-plane
       position="0 0 -4"
       rotation="-90 0 0"
       width="100"
       height="100"
       color="#7BC8A4"
       shadow="receive: true"
-    ></a-plane>
+    ></a-plane> -->
     <a-sky color="#3366FF"></a-sky>
   </a-scene>
 </template>
